@@ -1,0 +1,87 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <!-- Contact -->
+  <article id="contact">
+    <h2 class="major">Contact</h2>
+    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc6ZsvGN9YqHfxhZnNyoeT9nARQA8y1bQu1vi8oeqgKXsIwyw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+      <div class="field half first">
+        <label for="name">Your Name</label>
+        <input type="text" name="entry.1861848500" id="entry.1861848500" />
+      </div>
+      <div class="field half">
+        <label for="email">Your Email</label>
+        <input type="text" name="entry.980776228" id="entry.980776228" />
+      </div>
+      <div class="">
+        <label for="email">Subject</label>
+        <input type="text" name="entry.509816712" id="entry.509816712" />
+      </div>
+      <div class="field">
+        <label for="message">Your Message</label>
+        <textarea name="entry.855973446" id="entry.855973446" rows="4"></textarea>
+      </div>
+      <ul class="actions">
+        <li><input type="submit" value="Send Message" class="special" /></li>
+        <li><input type="reset" value="Reset" /></li>
+      </ul>
+    </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript">var submitted=false;</script>
+    <script type="text/javascript">
+    $('#gform').on('submit', function(e) {
+        $('#gform *').fadeOut(0);
+        $('#gform').prepend('Your submission has been processed...');
+      });
+    </script>
+
+
+  </article>
+
+</div>
+</body>
+</html>
+
+
+
+ <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc6ZsvGN9YqHfxhZnNyoeT9nARQA8y1bQu1vi8oeqgKXsIwyw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+                    <fieldset>
+
+                    <div class="form-field">
+                        <label for="name">Your Name</label>
+                        <input name="entry.1861848500" type="text" id="entry.1861848500" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Your Email</label>
+                        <input name="entry.980776228" type="email" id="entry.980776228" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Subject</label>
+                        <input name="entry.509816712" type="text" id="entry.509816712" placeholder="Subject" value="" class="full-width">
+                    </div>
+                    <div class="form-field">
+                        <label for="message">Your Message</label>
+                        <textarea name="entry.855973446" id="entry.855973446" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+                    </div>
+                    <div class="form-field">
+                        <button class="full-width btn--primary">Submit</button>
+                        <div class="submit-loader">
+                            <div class="text-loader">Sending...</div>
+                            <div class="s-loader">
+                                <div class="bounce1"></div>
+                                <div class="bounce2"></div>
+                                <div class="bounce3"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    </fieldset>
+                </form>
