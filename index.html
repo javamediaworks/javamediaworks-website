@@ -249,7 +249,7 @@
     </section> <!-- end s-services -->
 
 
-    <!-- contact
+   <!-- contact
     ================================================== -->
     <section id="contact" class="s-contact">
 
@@ -269,20 +269,24 @@
 
                 <h3 class="h6">Send Us A Message</h3>
 
-                <form name="contactForm" id="contactForm" method="post" action="" novalidate="novalidate">
+                <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLSc6ZsvGN9YqHfxhZnNyoeT9nARQA8y1bQu1vi8oeqgKXsIwyw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
                     <fieldset>
 
                     <div class="form-field">
-                        <input name="contactName" type="text" id="contactName" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
+<!--                         <label for="name">Your Name</label>
+ -->                        <input name="entry.1861848500" type="text" id="entry.1861848500" placeholder="Your Name" value="" minlength="2" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactEmail" type="email" id="contactEmail" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
+<!--                         <label for="email">Your Email</label>
+ -->                        <input name="entry.980776228" type="email" id="entry.980776228" placeholder="Your Email" value="" required="" aria-required="true" class="full-width">
                     </div>
                     <div class="form-field">
-                        <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="" class="full-width">
+<!--                         <label for="email">Subject</label>
+ -->                        <input name="entry.509816712" type="text" id="entry.509816712" placeholder="Subject" value="" class="full-width">
                     </div>
                     <div class="form-field">
-                        <textarea name="contactMessage" id="contactMessage" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
+<!--                         <label for="message">Your Message</label>
+ -->                        <textarea name="entry.855973446" id="entry.855973446" placeholder="Your Message" rows="10" cols="50" required="" aria-required="true" class="full-width"></textarea>
                     </div>
                     <div class="form-field">
                         <button class="full-width btn--primary">Submit</button>
@@ -299,6 +303,7 @@
                     </fieldset>
                 </form>
 
+                
                 <!-- contact-warning -->
                 <div class="message-warning">
                     Something went wrong. Please try again.
